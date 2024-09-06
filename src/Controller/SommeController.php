@@ -6,11 +6,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-class HomeController extends AbstractController
+class SommeController extends AbstractController
 {
-    #[Route('/', name: '')]
-    public function index(): Response
+    #[Route('/somme', name: 'somme')]
+    public function somme(): Response
     {
-        return $this->render('base.html.twig');
+        return $this->render('somme.html.twig');
     }
 }
